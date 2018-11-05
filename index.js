@@ -28,12 +28,12 @@ return (a -= 1);
 function makeInt(a, base) {
  var parsed = parseInt(a, 10);
  if (isNaN(parsed)) { return `true` }
- else { return parseInt(a, 10) }
+ else { return parsed }
 }
 
 function preserveDecimal(a) {
   var parsed = parseFloat(a);
-  if (isNaN(a)) { return `true` }
+  if (isNaN(parsed)) { return `true` }
   else { return parsed; }
 }
 
